@@ -33,10 +33,12 @@ const toggleContainer = () => {
     if (toggleDark) {
         container.classList.add('dark-mode')
         toggle.innerHTML = "Disable Dark Mode";
+        to.style.color = 'white'
     } else {
         if (container.classList) {
             container.classList.remove('dark-mode')
             toggle.innerHTML = "Enable Dark Mode";
+            to.style.color = 'black'
         }
     }
 }
