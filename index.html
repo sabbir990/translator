@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language-Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="container">
+
+    <div class="container">
+        <div class="header">
+            <h1 id="logo">Language-Translator</h1>
+            <button id="toggle">Enable Dark Mode</button>
+        </div>
+        <div class="main">
+            <div class="input-div">
+                <textarea id="from" cols="30" rows="10" placeholder="Enter your text"></textarea>
+                <textarea id="to" cols="30" rows="10" placeholder="Your translated output" disabled></textarea>
+            </div>
+            <div class="language-selector">
+                <button class="listen" id="listen-from">Listen as voice</button>
+                <div class="flex-gap">
+
+                </div>
+                <button class="copy" id="copy-from">Copy</button>
+                <div class="flex-gap">
+
+                </div>
+                <select id="translate-from">
+                    
+                </select>
+                <div class="flex-gap">
+
+                </div>
+                <button class="swap-button" id="swap-button">Swap</button>
+                <div class="flex-gap">
+
+                </div>
+                <select id="translate-to">
+                    
+                </select>
+                <div class="flex-gap">
+
+                </div>
+                <button class="copy" id="copy-to">Copy</button>
+                <div class="flex-gap">
+
+                </div>
+                <button class="listen" id="listen-to">Listen as voice</button>
+            </div>
+            <button class="translate-button" id="translate-button">Translate</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+    <script src="./assets/countries.js" type="module"></script>
+</body>
+
+</html>
