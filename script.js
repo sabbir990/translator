@@ -93,7 +93,7 @@ const toCopy = () => {
     }
 }
 
-const listenFunc = (words) => {
+const listenFunc = (words, code) => {
     if ('speechSynthesis' in window) {
         const uttrerance = new SpeechSynthesisUtterance();
 
@@ -101,7 +101,7 @@ const listenFunc = (words) => {
             uttrerance.text = words
         }
 
-        uttrerance.lang = 'en-US';
+        uttrerance.lang = `${code}`;
 
         speechSynthesis.speak(uttrerance);
     } else {
@@ -145,11 +145,11 @@ translateButton.addEventListener('click', () => {
 })
 
 listenTo.addEventListener('click', () => {
-    listenFunc(to.value);
+    listenFunc(to.value, country_code);
 })
 
 listenFrom.addEventListener('click', () => {
-    listenFunc(from.value);
+    listenFunc(from.value, country_code);
 })
 
 listenTo.addEventListener('click', () => {
